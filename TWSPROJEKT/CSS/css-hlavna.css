@@ -1,0 +1,293 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Minimálna výška stránky */
+    display: flex;
+    flex-direction: column; /* Stĺpcový layout */
+}
+
+header {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background 0.5s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 3px solid #550EF1;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.8;
+    transition: all 0.3s ease;
+    height: auto; /* Dynamická výška, ktorá sa prispôsobí obsahu */
+    max-width: 900px; /* Maximálna šírka */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Obsah bude vždy na spodku */
+}
+
+main:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Efekt pri prechode myšou */
+    border-color: #2B1BE4; /* Zmena farby okraja pri hover */
+}
+
+main h1 {
+    font-family: 'Poppins', Arial, sans-serif; /* Set the desired font family */
+    color: #6a11cb; /* Modré nadpisy */
+    font-size: 32px; /* Väčšie titulky */
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: -5px;
+    text-align: center;
+    text-transform: uppercase; /* Všetky písmená veľké pre elegantný vzhľad */
+    letter-spacing: 2px; /* Väčší rozstup medzi písmenami */
+}
+main h2 {
+    font-family: 'Poppins', Arial, sans-serif; /* Set the desired font family */
+    color: #6a11cb; /* Modré nadpisy */
+    font-size: 32px; /* Väčšie titulky */
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+    text-transform: uppercase; /* Všetky písmená veľké pre elegantný vzhľad */
+    letter-spacing: 2px; /* Väčší rozstup medzi písmenami */
+}
+
+main p {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 18.5px;
+    color: #000000;
+    line-height: 1.6; /* Zlepšená čitateľnosť medzi riadkami */
+}
+
+
+form {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+form label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+    display: block;
+    color: #333333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    margin-top: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #f7f9fc;
+    font-size: 16px;
+    color: #333333;
+}
+
+form button {
+    padding: 12px 24px;
+    background-color: #2575fc;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #6a11cb;
+}
+
+footer {
+    background: #2575fc;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 20px;
+    margin-top: auto; /* Footer vždy dole */
+}
+
+footer a {
+    color: #00d9ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.logo-img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.sidebar {
+    width: 250px;
+    height: 590px;
+    background-color: #f1ffff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: absolute;
+    top: 197.81px;
+    right: 20px;
+    border: 3px solid #1B5AE4;
+    border-radius: 20px;
+}
+
+.sidebar h2 {
+    color: #333333;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.sidebar ul {
+    list-style: disc inside;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    font-size: 16px;
+    color: #444444;
+    margin-bottom: 8px;
+}
+
+.sidebar ul li::marker {
+    color: #2575fc;
+}
+.kalkulačka {
+    margin: 20px 0; /* Pridá vertikálny odstup od okrajov */
+    background-color: #ffffff;
+    line-height: 1.8;
+    transition: all 0.3s ease;
+    height: auto; /* Dynamická výška, ktorá sa prispôsobí obsahu */
+    max-width: 225px; /* Maximálna šírka */
+    display: block; /* Nastaví obrázok ako blokový prvok */
+    float: left; /* Presunie obrázok na ľavú stranu */
+    padding: 20px;
+    margin-right: 20px; /* Pridá priestor medzi obrázkom a textom napravo */
+    margin-left: 300px;
+    margin-bottom: 50px;
+    border: 3px solid #550EF1;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.stranka {
+    margin: 20px 0; /* Pridá vertikálny odstup od okrajov */
+    background-color: #ffffff;
+    line-height: 1.8;
+    transition: all 0.3s ease;
+    height: auto; /* Dynamická výška, ktorá sa prispôsobí obsahu */
+    max-width: 300px; /* Maximálna šírka */
+    display: block; /* Nastaví obrázok ako blokový prvok */
+    padding: 20px;
+    margin-right: 20px; /* Pridá priestor medzi obrázkom a textom napravo */
+    margin-left: 750px;
+    margin-top: -280px;
+    margin-bottom: 50px;
+    border: 3px solid #550EF1;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.hra{
+    margin: 20px 0; /* Pridá vertikálny odstup od okrajov */
+    background-color: #ffffff;
+    line-height: 1.8;
+    transition: all 0.3s ease;
+    height: auto; /* Dynamická výška, ktorá sa prispôsobí obsahu */
+    max-width: 300px; /* Maximálna šírka */
+    display: block; /* Nastaví obrázok ako blokový prvok */
+    padding: 20px;
+    margin-right: 20px; /* Pridá priestor medzi obrázkom a textom napravo */
+    margin-left: 1200px;
+    margin-top: -270px;
+    margin-bottom: 50px;
+    border: 3px solid #550EF1;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Medzera medzi obrázkami */
+    justify-content: center;
+    padding: 10px;
+}
+.gallery img {
+    max-width: 550px; /* Maximálna šírka obrázkov */
+    height: 350px; /* Zachovanie pomeru strán */
+    border-radius: 5px; /* Zaoblené rohy */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Jemný tieň */
+    transition: transform 0.5s; /* Efekt pri prechode myšou */
+}
+.gallery img:hover {
+    transform: scale(1.2); /* Zväčšenie obrázku pri hover */
+}
+table {
+    margin: 0 auto; /* Centrovanie tabuľky horizontálne */
+    background-color: #ffffff; /* Biele pozadie */
+    border-collapse: collapse; /* Spojenie okrajov buniek tabuľky */
+    max-width: 500px; /* Maximálna šírka tabuľky */
+    border: 3px solid #550EF1; /* Obruba tabuľky */
+    border-radius: 150px; /* Zaoblené rohy */   
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Jemný tieň */
+    transition: all 0.3s ease; /* Prechod pre efekty */
+    margin-bottom: 15px;
+}
+table th, table td {
+    padding: 20px; /* Vnútorné odsadenie buniek */
+    text-align: left; /* Zarovnanie textu naľavo */
+    border: 1px solid #ddd; /* Obruba medzi bunkami */
+}
+table th {
+    background-color: #f4f4f4; /* Svetlé pozadie hlavičky */
+    font-weight: bold; /* Tučné písmo pre hlavičku */
+}
+table tr:hover {
+    background-color: #eaeaea; /* Zvýraznenie riadku pri hover */
+}
